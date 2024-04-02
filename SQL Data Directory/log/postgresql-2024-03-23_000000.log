@@ -1,0 +1,89 @@
+2024-03-27 22:27:48.620 EDT [7948] LOG:  checkpoint starting: time
+2024-03-27 22:27:50.893 EDT [7948] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.219 s, sync=0.031 s, total=2.276 s; sync files=17, longest=0.007 s, average=0.002 s; distance=99 kB, estimate=99 kB; lsn=0/1614980, redo lsn=0/1614948
+2024-03-27 22:33:37.691 EDT [26596] ERROR:  syntax error at or near ")" at character 70
+2024-03-27 22:33:37.691 EDT [26596] STATEMENT:  SELECT SUM(nationalities) AS sum_nationalities,
+	       COUNT(DISTINCT) AS unique_nationalities
+	FROM homework_data LIMIT 100
+2024-03-27 22:34:17.798 EDT [26596] ERROR:  syntax error at or near ")" at character 68
+2024-03-27 22:34:17.798 EDT [26596] STATEMENT:  SELECT SUM(nationality) AS sum_nationalities,
+	       COUNT(DISTINCT) AS unique_nationalities
+	FROM homework_data LIMIT 100
+2024-03-27 22:35:02.188 EDT [26596] ERROR:  function sum(character varying) does not exist at character 8
+2024-03-27 22:35:02.188 EDT [26596] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2024-03-27 22:35:02.188 EDT [26596] STATEMENT:  SELECT SUM(nationality) AS sum_nationalities,
+	       COUNT(DISTINCT nationality) AS unique_nationalities
+	FROM homework_data LIMIT 100
+2024-03-27 22:36:17.542 EDT [26596] ERROR:  syntax error at or near "DISTINCT" at character 35
+2024-03-27 22:36:17.542 EDT [26596] STATEMENT:  SELECT * FROM homework_data
+	COUNT(DISTINCT nationality) AS unique_nationalities LIMIT 100
+2024-03-27 22:36:30.665 EDT [26596] ERROR:  function sum(character varying) does not exist at character 8
+2024-03-27 22:36:30.665 EDT [26596] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2024-03-27 22:36:30.665 EDT [26596] STATEMENT:  SELECT SUM(nationality) AS sum_nationalities,
+	       COUNT(DISTINCT nationality) AS unique_nationalities
+	FROM homework_data LIMIT 100
+2024-03-27 22:40:52.025 EDT [26596] ERROR:  syntax error at or near "FROM" at character 42
+2024-03-27 22:40:52.025 EDT [26596] STATEMENT:  SELECT AVG(lap_times) AS mean_lap_times,
+	FROM homework_data
+	GROUP BY driverId
+	ORDER BY mean_lap_times ASC LIMIT 100
+2024-03-27 22:40:53.529 EDT [26596] ERROR:  syntax error at or near "FROM" at character 42
+2024-03-27 22:40:53.529 EDT [26596] STATEMENT:  SELECT AVG(lap_times) AS mean_lap_times,
+	FROM homework_data
+	GROUP BY driverId
+	ORDER BY mean_lap_times ASC LIMIT 100
+2024-03-27 22:42:33.228 EDT [26596] ERROR:  syntax error at or near "GROUP" at character 42
+2024-03-27 22:42:33.228 EDT [26596] STATEMENT:  SELECT AVG(lap_times) AS mean_lap_times,
+	GROUP BY driverId
+	ORDER BY mean_lap_times ASC
+	FROM homework_data LIMIT 100
+2024-03-27 22:42:45.476 EDT [26596] ERROR:  column "driverid" does not exist at character 69
+2024-03-27 22:42:45.476 EDT [26596] HINT:  Perhaps you meant to reference the column "homework_data.driver_id".
+2024-03-27 22:42:45.476 EDT [26596] STATEMENT:  SELECT AVG(lap_times) AS mean_lap_times
+	FROM homework_data
+	GROUP BY driverId
+	ORDER BY mean_lap_times ASC LIMIT 100
+2024-03-27 22:46:37.254 EDT [26596] ERROR:  column "lap_times" does not exist at character 12
+2024-03-27 22:46:37.254 EDT [26596] STATEMENT:  SELECT SUM(lap_times) AS sum_lap_times
+	GROUP BY nationality
+	HAVING SUM(sum_lap_time) > 150
+2024-03-27 22:47:06.961 EDT [26596] ERROR:  column "sum_lap_time" does not exist at character 91
+2024-03-27 22:47:06.961 EDT [26596] STATEMENT:  SELECT SUM(lap_times) AS sum_lap_times
+	FROM homework_data
+	GROUP BY nationality
+	HAVING SUM(sum_lap_time) > 150 LIMIT 100
+2024-03-27 22:47:16.041 EDT [26596] ERROR:  column "lap_time" does not exist at character 91
+2024-03-27 22:47:16.041 EDT [26596] HINT:  Perhaps you meant to reference the column "homework_data.lap_times".
+2024-03-27 22:47:16.041 EDT [26596] STATEMENT:  SELECT SUM(lap_times) AS sum_lap_times
+	FROM homework_data
+	GROUP BY nationality
+	HAVING SUM(lap_time) > 150 LIMIT 100
+2024-03-27 22:53:43.521 EDT [26596] ERROR:  syntax error at or near "CREATE" at character 32
+2024-03-27 22:53:43.521 EDT [26596] STATEMENT:  DROP TABLE IF EXISTS lap_times
+	CREATE TABLE lap_times(
+	    "raceId" int,
+	    "driverId" int,
+	    lap int,
+	    'position' int,
+	    'time' varchar(225),
+	    milliseconds int
+	)
+2024-03-27 22:54:23.914 EDT [26596] ERROR:  syntax error at or near "'position'" at character 80
+2024-03-27 22:54:23.914 EDT [26596] STATEMENT:  CREATE TABLE lap_times(
+	    "raceId" int,
+	    "driverId" int,
+	    lap int,
+	    'position' int,
+	    'time' varchar(225),
+	    milliseconds int
+	)
+2024-03-27 22:54:30.756 EDT [26596] ERROR:  syntax error at or near "'time'" at character 98
+2024-03-27 22:54:30.756 EDT [26596] STATEMENT:  CREATE TABLE lap_times(
+	    "raceId" int,
+	    "driverId" int,
+	    lap int,
+	    position int,
+	    'time' varchar(225),
+	    milliseconds int
+	)
+2024-03-27 22:57:48.931 EDT [7948] LOG:  checkpoint starting: time
+2024-03-27 22:57:51.545 EDT [7948] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.548 s, sync=0.042 s, total=2.615 s; sync files=16, longest=0.009 s, average=0.003 s; distance=93 kB, estimate=98 kB; lsn=0/162BF90, redo lsn=0/162BF58

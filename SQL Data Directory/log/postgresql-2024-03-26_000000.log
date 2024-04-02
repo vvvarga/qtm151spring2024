@@ -1,0 +1,24 @@
+2024-04-01 23:40:02.853 EDT [7820] ERROR:  syntax error at or near "<<<<<<<" at character 1
+2024-04-01 23:40:02.853 EDT [7820] STATEMENT:  <<<<<<< HEAD:Lectures/Lecture #16 Installing SQL/lecture_16.sqlbook
+2024-04-01 23:40:25.682 EDT [7820] ERROR:  syntax error at or near "=======" at character 1
+2024-04-01 23:40:25.682 EDT [7820] STATEMENT:  =======
+2024-04-01 23:41:09.792 EDT [7820] ERROR:  syntax error at or near "<<<<<<<" at character 1
+2024-04-01 23:41:09.792 EDT [7820] STATEMENT:  <<<<<<< HEAD:Lectures/Lecture #16 Installing SQL/lecture_16.sqlbook
+2024-04-01 23:41:54.979 EDT [7820] ERROR:  syntax error at or near "=======" at character 1
+2024-04-01 23:41:54.979 EDT [7820] STATEMENT:  =======
+2024-04-01 23:42:10.224 EDT [7820] ERROR:  syntax error at or near "<<<<<<<" at character 1
+2024-04-01 23:42:10.224 EDT [7820] STATEMENT:  <<<<<<< HEAD:Lectures/Lecture #16 Installing SQL/lecture_16.sqlbook
+2024-04-01 23:42:13.941 EDT [7820] ERROR:  syntax error at or near "<<<<<<<" at character 1
+2024-04-01 23:42:13.941 EDT [7820] STATEMENT:  <<<<<<< HEAD:Lectures/Lecture #16 Installing SQL/lecture_16.sqlbook
+2024-04-01 23:43:01.134 EDT [7820] ERROR:  syntax error at or near "<<<<<<<" at character 1
+2024-04-01 23:43:01.134 EDT [7820] STATEMENT:  <<<<<<< HEAD:Lectures/Lecture #16 Installing SQL/lecture_16.sqlbook
+2024-04-01 23:43:10.096 EDT [7820] ERROR:  syntax error at or near ">>>>>>>" at character 1
+2024-04-01 23:43:10.096 EDT [7820] STATEMENT:  >>>>>>> upstream/main:lecture_16/lecture_16.sqlbook
+	-- If the table already exists we can drop it:
+	-- If it doesn't exist nothing happens
+	-- System commands are in upper case and user defined
+	-- names are in lower case
+	-- Comments are written with double dashes "--" rather than hastag (#)
+2024-04-01 23:46:28.692 EDT [7948] LOG:  checkpoint starting: time
+2024-04-01 23:46:31.064 EDT [7948] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.300 s, sync=0.046 s, total=2.376 s; sync files=16, longest=0.008 s, average=0.003 s; distance=107 kB, estimate=107 kB; lsn=0/1646D10, redo lsn=0/1646CD8
+2024-04-01 23:48:52.026 EDT [22696] FATAL:  database "formula1" does not exist
