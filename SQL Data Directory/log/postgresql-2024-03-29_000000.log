@@ -1,0 +1,41 @@
+2024-04-04 20:25:19.899 EDT [42528] FATAL:  database "formula1" does not exist
+2024-04-04 20:29:04.906 EDT [23280] FATAL:  database "formula1" does not exist
+2024-04-04 20:40:19.303 EDT [41548] FATAL:  database "formula1" does not exist
+2024-04-04 20:41:43.999 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 20:42:41.164 EDT [7948] LOG:  checkpoint complete: wrote 518 buffers (3.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=57.092 s, sync=0.039 s, total=57.167 s; sync files=31, longest=0.004 s, average=0.002 s; distance=4740 kB, estimate=4740 kB; lsn=0/1B04F10, redo lsn=0/1AE7F50
+2024-04-04 20:46:43.156 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 20:47:10.166 EDT [7948] LOG:  checkpoint complete: wrote 250 buffers (1.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=26.952 s, sync=0.023 s, total=27.010 s; sync files=32, longest=0.002 s, average=0.001 s; distance=264 kB, estimate=4293 kB; lsn=0/1B2A2C8, redo lsn=0/1B2A290
+2024-04-04 20:51:43.182 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 20:52:01.490 EDT [7948] LOG:  checkpoint complete: wrote 167 buffers (1.0%); 1 WAL file(s) added, 0 removed, 0 recycled; write=18.181 s, sync=0.027 s, total=18.309 s; sync files=37, longest=0.003 s, average=0.001 s; distance=1294 kB, estimate=3993 kB; lsn=0/1C6DB58, redo lsn=0/1C6DB20
+2024-04-04 21:06:43.527 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 21:06:46.505 EDT [7948] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.925 s, sync=0.020 s, total=2.979 s; sync files=23, longest=0.004 s, average=0.001 s; distance=140 kB, estimate=3607 kB; lsn=0/1C90F50, redo lsn=0/1C90F18
+2024-04-04 21:10:36.583 EDT [42932] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-04-04 21:10:36.607 EDT [41692] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-04-04 21:10:36.673 EDT [27832] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-04-04 21:11:43.517 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 21:11:46.759 EDT [7948] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.182 s, sync=0.036 s, total=3.242 s; sync files=21, longest=0.018 s, average=0.002 s; distance=162 kB, estimate=3263 kB; lsn=0/1CB98A8, redo lsn=0/1CB9870
+2024-04-04 21:16:43.771 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 21:16:44.129 EDT [7948] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.326 s, sync=0.003 s, total=0.358 s; sync files=1, longest=0.003 s, average=0.003 s; distance=15 kB, estimate=2938 kB; lsn=0/1CBD7C8, redo lsn=0/1CBD790
+2024-04-04 21:21:25.262 EDT [30452] ERROR:  relation "sprint_results" does not exist at character 52
+2024-04-04 21:21:25.262 EDT [30452] STATEMENT:  SELECT nationality                            FROM sprint_results                              WHERE name = 'British'                            ORDER BY driver_name ASC
+2024-04-04 21:22:33.890 EDT [30452] ERROR:  column "name" does not exist at character 93
+2024-04-04 21:22:33.890 EDT [30452] STATEMENT:  SELECT *                            FROM homework9_table                              WHERE name = 'British'                            ORDER BY driver_name ASC
+2024-04-04 21:28:28.690 EDT [30452] ERROR:  column "driverId" does not exist at character 150
+2024-04-04 21:28:28.690 EDT [30452] HINT:  Perhaps you meant to reference the column "homework9_table.driver_id".
+2024-04-04 21:28:28.690 EDT [30452] STATEMENT:  SELECT AVG(lap_times) AS avg_lap_times                                         FROM homework9_table                                         GROUP BY "driverId"                                         ORDER BY avg_lap_times;
+2024-04-04 21:28:59.866 EDT [30452] ERROR:  column "driverId" does not exist at character 8
+2024-04-04 21:28:59.866 EDT [30452] HINT:  Perhaps you meant to reference the column "homework9_table.driver_id".
+2024-04-04 21:28:59.866 EDT [30452] STATEMENT:  SELECT "driverId", AVG(lap_times) AS avg_lap_times                                         FROM homework9_table                                         GROUP BY "driverId"                                         ORDER BY avg_lap_times;
+2024-04-04 21:45:21.691 EDT [30452] ERROR:  syntax error at or near "(" at character 68
+2024-04-04 21:45:21.691 EDT [30452] STATEMENT:  SELECT nationality                                              SUM(lap_times) AS sum_laptimes                                              MIN(lap_times) AS min_laptimes                                              MAX(lap_times) AS max_laptimes                                              MAX(lap_times)-MIN(lap_times) AS range_laptimes                                              FROM homework9_table                                              GROUP BY nationality;
+2024-04-04 21:46:46.563 EDT [30452] ERROR:  syntax error at or near "FROM" at character 393
+2024-04-04 21:46:46.563 EDT [30452] STATEMENT:  SELECT nationality,                                              SUM(lap_times) AS sum_laptimes,                                              MIN(lap_times) AS min_laptimes,                                              MAX(lap_times) AS max_laptimes,                                              (MAX(lap_times)-MIN(lap_times)) AS range_laptimes,                                              FROM homework9_table                                              GROUP BY nationality;
+2024-04-04 21:47:10.705 EDT [30452] ERROR:  syntax error at or near "FROM" at character 348
+2024-04-04 21:47:10.705 EDT [30452] STATEMENT:  SELECT nationality, SUM(lap_times) AS sum_laptimes,                                              MIN(lap_times) AS min_laptimes,                                              MAX(lap_times) AS max_laptimes,                                              (MAX(lap_times)-MIN(lap_times)) AS range_laptimes,                                              FROM homework9_table                                              GROUP BY nationality;
+2024-04-04 21:51:43.167 EDT [7948] LOG:  checkpoint starting: time
+2024-04-04 21:51:46.736 EDT [7948] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.307 s, sync=0.061 s, total=3.570 s; sync files=21, longest=0.012 s, average=0.003 s; distance=138 kB, estimate=2658 kB; lsn=0/1CE0018, redo lsn=0/1CDFFC8
+2024-04-04 21:52:49.049 EDT [30452] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
