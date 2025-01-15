@@ -1,0 +1,6 @@
+2024-09-12 01:49:44.353 EDT [8056] LOG:  database system was shut down at 2024-09-12 01:49:20 EDT
+2024-09-12 01:50:16.041 EDT [2156] ERROR:  canceling statement due to user request
+2024-09-12 01:50:16.041 EDT [8184] ERROR:  canceling statement due to user request
+2024-09-12 01:50:16.065 EDT [8036] LOG:  shutting down
+2024-09-12 01:50:16.067 EDT [8036] LOG:  checkpoint starting: shutdown immediate
+2024-09-12 01:50:16.144 EDT [8036] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.005 s, total=0.079 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1D1BD18, redo lsn=0/1D1BD18

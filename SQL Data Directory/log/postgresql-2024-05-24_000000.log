@@ -1,0 +1,5 @@
+2024-05-27 14:11:54.412 EDT [8236] ERROR:  canceling statement due to user request
+2024-05-27 14:11:54.412 EDT [8228] ERROR:  canceling statement due to user request
+2024-05-27 14:11:54.435 EDT [5160] LOG:  shutting down
+2024-05-27 14:11:54.439 EDT [5160] LOG:  checkpoint starting: shutdown immediate
+2024-05-27 14:11:54.481 EDT [5160] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.046 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1D1B298, redo lsn=0/1D1B298

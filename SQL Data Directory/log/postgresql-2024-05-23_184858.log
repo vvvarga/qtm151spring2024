@@ -1,0 +1,3 @@
+2024-05-23 18:48:58.885 EDT [3616] LOG:  database system was shut down at 2024-05-23 18:48:30 EDT
+2024-05-23 18:53:58.890 EDT [5160] LOG:  checkpoint starting: time
+2024-05-23 18:53:58.929 EDT [5160] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.008 s, total=0.041 s; sync files=2, longest=0.007 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1D1B1E8, redo lsn=0/1D1B1B0
