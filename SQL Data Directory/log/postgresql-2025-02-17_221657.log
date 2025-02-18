@@ -1,0 +1,7 @@
+2025-02-17 22:16:57.419 EST [7896] LOG:  database system was interrupted; last known up at 2025-02-15 17:47:26 EST
+2025-02-17 22:16:58.587 EST [7896] LOG:  database system was not properly shut down; automatic recovery in progress
+2025-02-17 22:16:58.592 EST [7896] LOG:  redo starts at 0/1D1DB10
+2025-02-17 22:16:58.592 EST [7896] LOG:  invalid record length at 0/1D1DBF8: expected at least 24, got 0
+2025-02-17 22:16:58.592 EST [7896] LOG:  redo done at 0/1D1DBC0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-02-17 22:16:58.596 EST [7028] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-02-17 22:16:58.606 EST [7028] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.012 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1D1DBF8, redo lsn=0/1D1DBF8
